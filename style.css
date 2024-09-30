@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.results{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+}
+.results .result {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 0.3rem;
+    margin: 1rem;
+    width: 50%;
+    
+}
+.image{
+    height: 20vh;
+    width: 35%;
+    margin-left: 26%;
+}
+
+.BuyButton {
+    border: 1px solid orangered;
+    border-radius: 6px;
+    background-color: orangered;
+    width: 30%;
+    margin-top: 1%;
+}
