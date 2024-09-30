@@ -8,7 +8,6 @@ fetch('https://fakestoreapi.com/products')
 
 
 function renderProducts(products) {
-  removeElements();
   products.forEach(product => {
     renderSingleProduct(product);
   });
@@ -41,9 +40,3 @@ function renderSingleProduct(product) {
   document.querySelector('.results').appendChild(resultDiv);
 }
 
-function removeElements() {
-  const results = document.querySelector('.results');
-  while (results.firstChild) {
-    results.removeChild(results.firstChild);
-  }
-}
